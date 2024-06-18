@@ -1,4 +1,4 @@
-package com.example.stylosenses
+package com.example.stylosensess
 
 import org.junit.Test
 
