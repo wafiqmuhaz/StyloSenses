@@ -32,14 +32,14 @@ fun DotIndicator(totalDots: Int, selectedIndex: Int) {
                     modifier = Modifier
                         .size(height = 7.dp, width = 15.dp)
                         .clip(CircleShape)
-                        .background(color = MaterialTheme.colorScheme.primary)
+                        .background(Color(0xFFFFA500), shape = CircleShape)
                 )
             } else {
                 Box(
                     modifier = Modifier
                         .size(7.dp)
                         .clip(CircleShape)
-                        .background(color = Color.LightGray)
+                        .background(color = Color.Gray)
                 )
             }
 

@@ -62,7 +62,7 @@ fun NotificationScreen() {
             )
             Spacer(modifier = Modifier.height(122.dp))
             Text(
-                text = "Fitur Cart akan segera hadir!",
+                text = "Fitur Notif akan segera hadir!",
                 fontSize = 25.sp,
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center,

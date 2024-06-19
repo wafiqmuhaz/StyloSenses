@@ -113,7 +113,7 @@ fun SplashScreen(navController: NavController) {
 
                                 Text(
                                     text = buildAnnotatedString {
-                                        append(text = "The all in one app for your clothes and laundry lorem  i believe i can fly")
+                                        append(text = "The all in one app for your clothes and laundry lorem i believe i can fly")
                                     },
                                     color = Color.Black,
                                     fontSize = 16.sp,
@@ -125,7 +125,7 @@ fun SplashScreen(navController: NavController) {
 
                         1 -> {
                             Text(
-                                text = "The all in one app for your clothes and laundry lorem  i believe i can fly",
+                                text = "The all in one app for your clothes and laundry lorem i believe i can fly",
                                 color = Color.Black,
                                 fontSize = 16.sp,
                                 textAlign = TextAlign.Center
@@ -134,7 +134,7 @@ fun SplashScreen(navController: NavController) {
 
                         else -> {
                             Text(
-                                text = "The all in one app for your clothes and laundry lorem  i believe i can fly",
+                                text = "The all in one app for your clothes and laundry lorem i believe i can fly",
                                 color = Color.Black,
                                 fontSize = 16.sp,
                                 textAlign = TextAlign.Center
