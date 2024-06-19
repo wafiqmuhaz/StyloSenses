@@ -296,21 +296,6 @@ fun DashboardScreen(
 //            )
 //        }
         //
-        Box(
-            modifier = Modifier
-                .size(200.dp)
-                .clickable {
-                    navController.navigate("taylor_screen")
-                }
-                .background(Color.LightGray),
-            contentAlignment = Alignment.Center
-        ) {
-            Text(
-                text = "Ke Taylor Screen",
-                style = MaterialTheme.typography.headlineMedium,
-                color = Color.Black
-            )
-        }
 
         LazyRow(
             modifier = Modifier
@@ -325,10 +310,7 @@ fun DashboardScreen(
                         .width(150.dp)
                         .height(150.dp)
                         .clip(RoundedCornerShape(20.dp))
-                        .clickable { navController.navigate(
-//                            ShopHomeScreen.TaylorScreen.route
-                        "taylor_screen"
-                        ) }
+//                        .clickable {navController.navigate(ShopHomeScreen.TailorListScreen.route)}
                 ) {
                     //constrains
                     val (bannerText, bannerImage) = createRefs()

@@ -36,6 +36,7 @@ fun FeatureScreen2(navController: NavHostController) {
             .fillMaxSize()
             .padding(horizontal = 16.dp)
             .padding(top = 16.dp)
+            .padding(bottom = 16.dp)
     ) {
         // Header
         Text(
@@ -72,13 +73,13 @@ fun FeatureScreen2(navController: NavHostController) {
             Box(
                 modifier = Modifier
                     .size(8.dp)
-                    .background(Color(0xFFFFA500), shape = CircleShape)
+                    .background(Color.Gray, shape = CircleShape)
             )
             Spacer(modifier = Modifier.width(8.dp))
             Box(
                 modifier = Modifier
                     .size(8.dp)
-                    .background(Color.Gray, shape = CircleShape)
+                    .background(Color(0xFFFFA500), shape = CircleShape)
             )
         }
 
@@ -90,14 +91,14 @@ fun FeatureScreen2(navController: NavHostController) {
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp)
                 .height(48.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color.Cyan)
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF6200EE),
+                contentColor = Color.White
+            )
         ) {
             Text(text = "Let's Get Started!")
         }
 
         Spacer(modifier = Modifier.weight(1f))
-
-        // Bottom Navigation
-//        BottomNavigationBar(navController = navController)
     }
 }

@@ -116,7 +116,7 @@ fun ProfileDetailScreen(navController: NavController) {
         ) {
             Spacer(modifier = Modifier.height(100.dp))
             Image(
-                painter = painterResource(id = R.drawable.img_profile),
+                painter = painterResource(id = R.drawable.circle_photo),
                 contentDescription = "Profile Picture",
                 modifier = Modifier.size(100.dp)
             )

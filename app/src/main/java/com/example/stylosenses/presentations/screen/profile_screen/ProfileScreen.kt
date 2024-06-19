@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
@@ -71,10 +72,11 @@ fun ProfileScreen(
         ) {
             val (image, cameraIcon) = createRefs()
             Image(
-                painter = painterResource(id = R.drawable.profile_image),
+                painter = painterResource(id = R.drawable.circle_photo),
                 contentDescription = "Profile Image",
                 modifier = Modifier
                     .clip(CircleShape)
+                    .size(100.dp)
                     .constrainAs(image) {
                         linkTo(start = parent.start, end = parent.end)
                     }
@@ -124,9 +126,6 @@ fun ProfileScreen(
             )
         }
 
-        Spacer(modifier = Modifier.height(15.dp))
-
-
 //        Row(
 //            modifier = Modifier
 //                .fillMaxWidth()
@@ -157,7 +156,6 @@ fun ProfileScreen(
 
 
         Spacer(modifier = Modifier.height(15.dp))
-
 
         Row(
             modifier = Modifier
